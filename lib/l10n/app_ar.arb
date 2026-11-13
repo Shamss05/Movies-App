@@ -1,0 +1,84 @@
+{
+  "@@locale": "ar",
+
+  
+
+
+ 
+  "onBoardingTitle1": "لاقي فيلمك المفضل الجديد هنا",
+  "onBoardingDesc1": "ادخل على مكتبة أفلام ضخمة تناسب كل الأذواق. أكيد هتلاقي حاجة تعجبك.",
+  "onBoardingTitle2": "اكتشف أفلام",
+  "onBoardingDesc2": "استكشف مجموعة كبيرة من الأفلام بكل الجودات والأنواع. لاقي فيلمك الجاي بسهولة.",
+  "onBoardingTitle3": "استكشف كل الأنواع",
+  "onBoardingDesc3": "اكتشف أفلام من كل نوع وبكل الجودات المتاحة. لاقي حاجة جديدة ومثيرة تتفرج عليها كل يوم.",
+  "onBoardingTitle4": "اعمل قوائم مشاهدة",
+  "onBoardingDesc4": "احفظ الأفلام في قائمة المشاهدة عشان تفتكر هتتفرج على إيه بعدين. استمتع بأفلام بجودات وأنواع مختلفة.",
+  "onBoardingTitle5": "قيّم وراجع واتعلم",
+  "onBoardingDesc5": "شارك رأيك في الأفلام اللي اتفرجت عليها. ادخل في تفاصيل الفيلم وساعد غيرك يلاقوا أفلام حلوة من مراجعاتك.",
+  "onBoardingTitle6": "ابدأ اتفرج دلوقتي",
+  "exploreNow": "استكشف دلوقتي",
+  "next": "التالي",
+  "back": "رجوع",
+  "finish": "خلاص",
+
+  "email": "الإيميل",
+  "password": "الباسورد",
+  "forgetPassword": "نسيت الباسورد؟",
+  "login": "دخول",
+  "dontHaveAccount": "معندكش حساب؟",
+  "createOne": "اعمل واحد",
+  "or": "أو",
+  "loginWithGoogle": "سجل دخول بجوجل",
+
+
+  "register": "تسجيل حساب",
+  "avatar": "الصورة الرمزية",
+  "name": "الاسم",
+  "confirmPassword": "تأكيد الباسورد",
+  "phoneNumber": "رقم الموبايل",
+  "createAccount": "إنشاء حساب",
+  "alreadyHaveAccount": "عندك حساب؟",
+
+ 
+  "forgetPasswordTitle": "نسيت الباسورد",
+  "verifyEmail": "تأكيد الإيميل",
+
+ 
+  "availableNow": "متاح دلوقتي",
+  "watchNow": "اتفرج دلوقتي",
+  "action": "أكشن",
+  "seeMore": "شوف أكتر",
+
+ 
+  "search": "بحث",
+
+
+  "browse": "تصفح",
+  "adventure": "مغامرات",
+  "animation": "رسوم متحركة",
+
+  "movieDetails": "تفاصيل الفيلم",
+  "watch": "اتفرج",
+  "screenShots": "لقطات من الفيلم",
+
+
+  "profile": "البروفايل",
+  "wishList": "قائمة الأمنيات",
+  "history": "السجل",
+  "editProfile": "تعديل البروفايل",
+  "exit": "خروج",
+  "watchList": "قائمة المشاهدة",
+
+
+  "updateProfile": "تعديل البروفايل",
+  "pickAvatar": "اختار صورة",
+  "resetPassword": "تغيير الباسورد",
+  "deleteAccount": "مسح الحساب",
+  "updateData": "تحديث البيانات",
+
+  
+  "home": "الرئيسية"
+
+
+ 
+}
