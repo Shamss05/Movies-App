@@ -111,6 +111,37 @@ class AppLocalizationsAr extends AppLocalizations {
   String get verifyEmail => 'تأكيد الإيميل';
 
   @override
+  String get emailRequired => 'الإيميل مطلوب';
+
+  @override
+  String get invalidEmail => 'من فضلك أدخل إيميل صحيح';
+
+  @override
+  String get passwordRequired => 'الباسورد مطلوب';
+
+  @override
+  String get invalidPassword =>
+      'يجب أن لا يقل الباسورد عن 8 حروف ويحتوي على رمز خاص';
+
+  @override
+  String get confirmPasswordRequired => 'تأكيد الباسورد مطلوب';
+
+  @override
+  String get passwordsDoNotMatch => 'الباسورد غير متطابق';
+
+  @override
+  String get nameRequired => 'الاسم مطلوب';
+
+  @override
+  String get invalidName => 'يجب أن يكون الاسم بين 3 و 15 حرف';
+
+  @override
+  String get phoneRequired => 'رقم الموبايل مطلوب';
+
+  @override
+  String get invalidPhone => 'من فضلك أدخل رقم موبايل مصري صحيح';
+
+  @override
   String get availableNow => 'متاح دلوقتي';
 
   @override

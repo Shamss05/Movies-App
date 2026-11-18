@@ -40,6 +40,16 @@
 
   "forgetPasswordTitle": "Forget Password",
   "verifyEmail": "Verify Email",
+  "emailRequired": "Email is required",
+  "invalidEmail": "Please enter a valid email address",
+  "passwordRequired": "Password is required",
+  "invalidPassword": "Password must be at least 8 characters with a special character",
+  "confirmPasswordRequired": "Please confirm your password",
+  "passwordsDoNotMatch": "Passwords do not match",
+  "nameRequired": "Name is required",
+  "invalidName": "Name must be between 3 and 15 characters",
+  "phoneRequired": "Phone number is required",
+  "invalidPhone": "Please enter a valid Egyptian phone number",
 
   "availableNow": "Available Now",
   "watchNow": "Watch Now",

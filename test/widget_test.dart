@@ -1,30 +1,74 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:movie_app/core/theme/app_colors.dart';
+import 'package:movie_app/core/theme/app_theme.dart';
+import 'package:movie_app/l10n/app_localizations.dart';
+import 'package:movie_app/ui/auth/forget_password/forget_password_screen.dart';
+import 'package:movie_app/ui/auth/login/login_screen.dart';
+import 'package:movie_app/ui/auth/register/register_screen.dart';
 
-import 'package:movie_app/main.dart';
+Widget _buildTestApp({
+  required Widget home,
+  Locale locale = const Locale('en'),
+}) {
+  return MaterialApp(
+    theme: AppTheme(DarkAppColors()).theme,
+    locale: locale,
+    localizationsDelegates: const [
+      AppLocalizations.delegate,
+      ...GlobalMaterialLocalizations.delegates,
+    ],
+    supportedLocales: AppLocalizations.supportedLocales,
+    routes: {
+      LoginScreen.routeName: (context) => const LoginScreen(),
+      RegisterScreen.routeName: (context) => const RegisterScreen(),
+      ForgetPasswordScreen.routeName: (context) => const ForgetPasswordScreen(),
+    },
+    home: home,
+  );
+}
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('LoginScreen renders fields, buttons, and navigates', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(_buildTestApp(home: const LoginScreen()));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('Email'), findsOneWidget);
+    expect(find.text('Password'), findsOneWidget);
+    expect(find.text('Forget Password ?'), findsOneWidget);
+    expect(find.text('Login'), findsOneWidget);
+    expect(find.text('Create One'), findsOneWidget);
+    expect(find.text('OR'), findsOneWidget);
+    expect(find.text('Login With Google'), findsOneWidget);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('RegisterScreen renders avatar selector and 5 fields', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(_buildTestApp(home: const RegisterScreen()));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Register'), findsOneWidget);
+    expect(find.text('Avatar'), findsOneWidget);
+    expect(find.text('Name'), findsOneWidget);
+    expect(find.text('Email'), findsOneWidget);
+    expect(find.text('Password'), findsOneWidget);
+    expect(find.text('Confirm Password'), findsOneWidget);
+    expect(find.text('Phone Number'), findsOneWidget);
+    expect(find.text('Create Account'), findsOneWidget);
+  });
+
+  testWidgets('ForgetPasswordScreen renders illustration, email, and button', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(_buildTestApp(home: const ForgetPasswordScreen()));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Forget Password'), findsOneWidget);
+    expect(find.text('Email'), findsOneWidget);
+    expect(find.text('Verify Email'), findsOneWidget);
   });
 }
