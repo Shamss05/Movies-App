@@ -111,6 +111,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verifyEmail => 'Verify Email';
 
   @override
+  String get emailRequired => 'Email is required';
+
+  @override
+  String get invalidEmail => 'Please enter a valid email address';
+
+  @override
+  String get passwordRequired => 'Password is required';
+
+  @override
+  String get invalidPassword =>
+      'Password must be at least 8 characters with a special character';
+
+  @override
+  String get confirmPasswordRequired => 'Please confirm your password';
+
+  @override
+  String get passwordsDoNotMatch => 'Passwords do not match';
+
+  @override
+  String get nameRequired => 'Name is required';
+
+  @override
+  String get invalidName => 'Name must be between 3 and 15 characters';
+
+  @override
+  String get phoneRequired => 'Phone number is required';
+
+  @override
+  String get invalidPhone => 'Please enter a valid Egyptian phone number';
+
+  @override
   String get availableNow => 'Available Now';
 
   @override

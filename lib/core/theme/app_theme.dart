@@ -10,6 +10,24 @@ class AppTheme {
     useMaterial3: true,
     brightness: appColors.brightness,
     scaffoldBackgroundColor: appColors.onPrimaryColor,
+    appBarTheme: AppBarTheme(
+      backgroundColor: appColors.onPrimaryColor,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      centerTitle: true,
+      iconTheme: IconThemeData(color: appColors.primaryColor),
+      titleTextStyle: TextStyle(
+        color: appColors.primaryColor,
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: appColors.primaryColor,
+        textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+      ),
+    ),
     colorScheme: ColorScheme(
       brightness: appColors.brightness,
       primary: appColors.primaryColor,

@@ -42,6 +42,16 @@
  
   "forgetPasswordTitle": "نسيت الباسورد",
   "verifyEmail": "تأكيد الإيميل",
+  "emailRequired": "الإيميل مطلوب",
+  "invalidEmail": "من فضلك أدخل إيميل صحيح",
+  "passwordRequired": "الباسورد مطلوب",
+  "invalidPassword": "يجب أن لا يقل الباسورد عن 8 حروف ويحتوي على رمز خاص",
+  "confirmPasswordRequired": "تأكيد الباسورد مطلوب",
+  "passwordsDoNotMatch": "الباسورد غير متطابق",
+  "nameRequired": "الاسم مطلوب",
+  "invalidName": "يجب أن يكون الاسم بين 3 و 15 حرف",
+  "phoneRequired": "رقم الموبايل مطلوب",
+  "invalidPhone": "من فضلك أدخل رقم موبايل مصري صحيح",
 
  
   "availableNow": "متاح دلوقتي",
